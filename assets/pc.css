@@ -1,0 +1,104 @@
+html {
+    font-size:63%;}
+    
+    body {
+        font-size:1.5em;
+        line-height:1.6;
+        font-weight:400;
+        font-family:'HelveticaNeue', sans-serif,'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+        color: rgb(50, 50, 50);
+}
+.pc{
+    display:grid;
+    height:100vh;
+    grid-template-columns: 0.25fr 0.25fr 0.5fr 0.25fr 0.25fr 1fr 1fr 0.5fr;
+    grid-template-rows: auto; /*70px 3fr 1fr 1fr 1fr 5fr 3fr 3fr*/
+    gap:0.75rem;
+    grid-template-areas:
+    "Header Header Header Header Header Header Header Header"
+    ". Dropdown1 Dropdown1 Dropdown1 . map map map"
+    ". Dropdown2 Dropdown2 Dropdown2 . map map map"
+    ". Dropdown3 Dropdown3 Dropdown3 . map map map"
+    ". Dropdown4 Dropdown4 Dropdown4 . map map map"
+    " . . . . . map map map"
+
+    /* ". Dropdown1 Dropdown1 . Dropdown3 ."
+    ". Dropdown2 Dropdown2 . Dropdown4 ."
+    ". map map map map ." */
+
+    "bar bar bar bar bar bar pie pie"
+    " pc_ta pc_ta pc_ta pc_ta pc_ta pc_tab pc_tab pc_tab";
+    /* "pc_tab pc_tab pc_tab pc_tab pc_tab"; */
+}
+.Header{
+    grid-area: Header;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    line-height: 1.05;
+    color: #2f9ec7;
+    text-transform: uppercase;
+}
+.bground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 175%;
+    background-size: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+}
+.Dropdown1{
+    grid-area: Dropdown1;
+    border: none;
+    background: #ddf0f9;
+    outline: none;
+    border-radius: 22px;
+    padding: 9px 20px 9px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.Dropdown2{
+    grid-area: Dropdown2;
+    border: none;
+    background: #bae1f3;
+    outline: none;
+    border-radius: 22px;
+    padding: 9px 20px 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Dropdown3{
+    grid-area: Dropdown3;
+    border: none;
+    background: #97d2ed;
+    outline: none;
+    border-radius: 22px;
+    padding: 9px 20px 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Dropdown4{
+    grid-area: Dropdown4;
+    border: none;
+    background: #74c2e7;
+    outline: none;
+    border-radius: 22px;
+    padding: 9px 20px 9px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.map{
+    grid-area: map;
+}
+.bar{
+    grid-area: bar;
+}
+.pie{
+    grid-area: pie;
+}
+.pc_ta{
+    grid-area: pc_ta;
+}
+.pc_tab{
+    grid-area: pc_tab;
+}
