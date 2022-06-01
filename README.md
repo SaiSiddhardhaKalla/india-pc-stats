@@ -5,5 +5,5 @@ A simple dashboard displaying Lok Sabha election results for the past 3 election
 
 
 ### Issues -
- - Maps *Winner Party* and *Runner Party* fail to load up due to timeout error on Heroku. Working on a fix. 
+ - Maps *Winner Party* and *Runner Party* when selecting *All States* fail to load up due to timeout error on Heroku. Working on a fix. 
  - Bye-Election results need to be updated. 
